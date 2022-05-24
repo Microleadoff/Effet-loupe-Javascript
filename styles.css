@@ -1,0 +1,39 @@
+:root {
+  --color-black: #242024;
+  --font-family: "Nunito", sans-serif;
+  --font-xxl: 40px;
+  --font-bold: 700;
+  --space-xl: 32px;
+
+  --border-radius-100: 4px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0 100px;
+  font-family: var(--font-family);
+}
+h1 {
+  font-weight: var(--font-bold);
+  text-align: center;
+  padding: var(--space-xl) 0;
+  font-size: var(--font-xxl);
+}
+img {
+  object-fit: cover;
+  border-radius: var(--border-radius-100)
+}
+.container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.image-glass {
+  position: absolute;
+  border: 3px solid var(--color-black);
+  border-radius: 50%;
+  cursor: none;
+  width: 100px;
+  height: 100px;
+}
